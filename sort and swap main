@@ -1,0 +1,22 @@
+package com.company;
+import java.io.IOException;
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        MyList list = new MyList();
+        list.add(80);
+        list.add(70);
+        list.add(60);
+        list.add(49);
+        list.add(90);
+        list.add(23);
+        list.add(78);
+        System.out.println(list.toString());
+        list.swap(1,4);
+        System.out.println(list.toString());
+        list.sort();
+        System.out.println(list.toString());
+    }
+}
